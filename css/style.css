@@ -159,6 +159,7 @@ body {
 
 .button-border {
   border: none;
+  background-color: white;
 }
 
 .active {
