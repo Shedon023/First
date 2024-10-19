@@ -24,7 +24,6 @@
 }
 
 body {
-  margin-left: 16px;
   width: 100%;
   height: 100%;
   font-family: TT Lakes normal;
@@ -35,6 +34,7 @@ body {
   border-bottom: 1px solid #d9fff5;
   background-color: #ffffff;
   height: 88px;
+  padding: 0 16px;
 }
 
 .nav-menu_left {
@@ -46,8 +46,7 @@ body {
 .nav-menu_right {
   display: flex;
   gap: 16px;
-  margin-right: 16px;
-  padding: 24px 16px 24px 0px;
+  padding: 24px 0px 24px 0px;
 }
 
 .hidden-menu-buttons {
@@ -112,8 +111,9 @@ body {
 .main-container {
   display: flex;
   flex-direction: column;
-  margin-top: 24px;
+  padding-top: 24px;
   background-color: #f8f8f8;
+  padding: 0 16px;
 }
 
 .services-title {
@@ -157,15 +157,23 @@ body {
   padding: 8px 9px 8px 16px;
 }
 
+.button-border {
+  border: none;
+}
+
 .active {
   border: 2px solid #b8ffec;
   border-radius: 6px;
+  background-color: #ffffff;
+}
+
+.content-wrapper {
+  margin-top: 24px;
 }
 
 .content {
   font-size: 14px;
   line-height: 18px;
-  margin-top: 24px;
   color: #1b1c21;
 }
 
@@ -187,7 +195,6 @@ body {
   line-height: 24px;
   color: #1b1c21;
   margin: 16px 0px 16px 28px;
-  background-color: white;
 }
 
 .read-more::before {
@@ -223,19 +230,19 @@ body {
   }
   .content-wrapper {
     display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+  }
+
+  .content-wrapper-two {
+    display: flex;
     flex-direction: column;
     width: 312px;
-    gap: 10px;
-    margin-top: 32px;
   }
 
   .big-image {
     width: 360px;
-    height: 208px;
-    position: absolute;
-    right: 36px;
-    top: 250px;
-    margin-top: 32px;
+    height: 258px;
   }
 
   .content-two {
@@ -248,12 +255,8 @@ body {
     display: none;
   }
 
-  .content-wrapper {
-    display: flex;
-    flex-direction: column;
+  .content-wrapper-two {
     width: 490px;
-    gap: 10px;
-    margin-top: 32px;
   }
 
   .title-wrapper {
@@ -269,15 +272,11 @@ body {
   }
 
   .read-more {
-    margin-top: 0px;
+    margin-top: 14px;
   }
 
   .big-image {
-    width: 531px;
+    width: 532px;
     height: 307px;
-    position: absolute;
-    right: 36px;
-    top: 150px;
-    margin-top: 52px;
   }
 }
